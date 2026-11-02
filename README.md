@@ -1,5 +1,7 @@
 # circuit-containerd
 
+[![Conn3x grade](https://conn3x.org/circuits/containerd/grade.svg)](https://conn3x.org/circuits/containerd/grade)
+
 A Conn3x circuit that installs containerd the way its getting-started guide lays it out: the official release tarball, runc and the CNI plugins, each at a version you pin and each checked against its release's SHA-256, plus upstream's systemd unit and a `config.toml` you control. It's for hosts that run containers without Docker, such as a Kubernetes node you're assembling yourself, where you'd like every machine on the same containerd whatever its distribution ships.
 
 The defaults are containerd 2.4.2, runc 1.5.2 and CNI plugins 1.9.1.
