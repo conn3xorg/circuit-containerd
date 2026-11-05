@@ -22,7 +22,7 @@ Pick one per host: this circuit, or [circuit-docker](https://github.com/conn3xor
 
 ```hcl
 module "containerd" {
-  source = "github.com/conn3xorg/circuit-containerd?ref=v0.1.0"
+  source = "github.com/conn3xorg/circuit-containerd?ref=v0.1.1"
 
   hosts                = { node1 = "203.0.113.10", node2 = "203.0.113.11" }
   ssh_private_key_file = "~/.ssh/id_ed25519"
