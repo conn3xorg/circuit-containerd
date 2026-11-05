@@ -11,7 +11,7 @@ set -eu
 cd "$(dirname "$0")"
 port=${PORT:-2312}
 containerfile=${CONTAINERFILE:-Containerfile}
-name=${NAME:-circuit-containerd}
+name=${CONTAINER_NAME:-circuit-containerd}
 
 podman=${PODMAN:-podman}
 if $podman container exists "$name"; then
