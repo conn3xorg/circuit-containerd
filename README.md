@@ -54,10 +54,10 @@ To try it on a throwaway container first, see [examples/local](examples/local).
 Each version moves with its checksums, which come from the files beside the release: `.sha256sum` for containerd, `runc.sha256sum` for runc and `.sha256` for the CNI plugins.
 
 ```hcl
-containerd_version = "2.4.1"
+containerd_version = "2.4.2"
 containerd_checksums = {
-  amd64 = "<SHA-256 of containerd-2.4.1-linux-amd64.tar.gz>"
-  arm64 = "<SHA-256 of containerd-2.4.1-linux-arm64.tar.gz>"
+  amd64 = "<SHA-256 of containerd-2.4.2-linux-amd64.tar.gz>"
+  arm64 = "<SHA-256 of containerd-2.4.2-linux-arm64.tar.gz>"
 }
 ```
 
