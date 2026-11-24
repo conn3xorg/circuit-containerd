@@ -80,7 +80,7 @@ jobs:
             systemctl is-active containerd
             systemctl is-enabled containerd
             ctr version | grep -c "Version:  *v2.4.2" | grep -x 2
-            runc --version | grep -x "runc version 1.5.2"
+            runc --version | grep -x "runc version 1.5.3"
             /opt/cni/bin/bridge 2>&1 | grep -F v1.9.1
             ctr plugins ls | grep -E "io.containerd.cri.v1 +runtime .* ok"
             ctr image pull ghcr.io/containerd/busybox:1.36

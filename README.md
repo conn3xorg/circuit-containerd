@@ -4,7 +4,7 @@
 
 A Conn3x circuit that installs containerd the way its getting-started guide lays it out: the official release tarball, runc and the CNI plugins, each at a version you pin and each checked against its release's SHA-256, plus upstream's systemd unit and a `config.toml` you control. It's for hosts that run containers without Docker, such as a Kubernetes node you're assembling yourself, where you'd like every machine on the same containerd whatever its distribution ships.
 
-The defaults are containerd 2.4.2, runc 1.5.2 and CNI plugins 1.9.1.
+The defaults are containerd 2.4.2, runc 1.5.3 and CNI plugins 1.9.1.
 
 ## If Docker is already there
 
@@ -112,8 +112,8 @@ Before the circuit runs, the `conn3x_host` data source reads each host's archite
 | `ssh_become` | bool | `false` | Run commands as root through sudo. Set it when `ssh_user` isn't root. |
 | `containerd_version` | string | `"2.4.2"` | containerd release to install. Change `containerd_checksums` with it. |
 | `containerd_checksums` | map(string) | The tarballs of 2.4.2 | SHA-256 of the `amd64` and `arm64` tarballs. |
-| `runc_version` | string | `"1.5.2"` | runc release to install. Change `runc_checksums` with it. |
-| `runc_checksums` | map(string) | The binaries of 1.5.2 | SHA-256 of the `amd64` and `arm64` binaries. |
+| `runc_version` | string | `"1.5.3"` | runc release to install. Change `runc_checksums` with it. |
+| `runc_checksums` | map(string) | The binaries of 1.5.3 | SHA-256 of the `amd64` and `arm64` binaries. |
 | `cni_version` | string | `"1.9.1"` | CNI plugins release to install. Change `cni_checksums` with it. |
 | `cni_checksums` | map(string) | The tarballs of 1.9.1 | SHA-256 of the `amd64` and `arm64` tarballs. |
 | `config_toml` | string | The systemd cgroup driver | Contents of `/etc/containerd/config.toml`. Stored in state. |
