@@ -1,6 +1,6 @@
 # Local example
 
-Applies circuit-containerd to a throwaway Rocky Linux 10 container with systemd, installing containerd 2.4.2, runc 1.5.2 and the CNI plugins 1.9.1. You need Conn3x and rootful Podman: on a Mac, `export CONTAINER_CONNECTION=podman-machine-default-root`; on Linux, `export PODMAN="sudo podman"`.
+Applies circuit-containerd to a throwaway Rocky Linux 10 container with systemd, installing containerd 2.4.2, runc 1.5.3 and the CNI plugins 1.9.1. You need Conn3x and rootful Podman: on a Mac, `export CONTAINER_CONNECTION=podman-machine-default-root`; on Linux, `export PODMAN="sudo podman"`.
 
 ```sh
 ./up.sh

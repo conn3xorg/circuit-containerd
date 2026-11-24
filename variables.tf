@@ -60,12 +60,12 @@ variable "containerd_checksums" {
 
 variable "runc_version" {
   type        = string
-  default     = "1.5.2"
-  description = "runc release to install, such as \"1.5.2\". Change runc_checksums with it."
+  default     = "1.5.3"
+  description = "runc release to install, such as \"1.5.3\". Change runc_checksums with it."
 
   validation {
     condition     = can(regex("^[0-9]+\\.[0-9]+\\.[0-9]+$", var.runc_version))
-    error_message = "runc_version must look like \"1.5.2\", without a leading v."
+    error_message = "runc_version must look like \"1.5.3\", without a leading v."
   }
 }
 
@@ -73,8 +73,8 @@ variable "runc_checksums" {
   type        = map(string)
   description = "SHA-256 of the runc.amd64 and runc.arm64 binaries, from the release's runc.sha256sum. Change these with runc_version."
   default = {
-    amd64 = "599f6f94ff8c5057241eff0d54c3c74f95c34935b6457b33fe545defc61e9488"
-    arm64 = "d10ecae898361832a059be2089bab92d158aec54661b18ed7346ed79628b46b0"
+    amd64 = "50dcc0b257d724fe07f3852c2dda52340223f038227c7572644eec870741223e"
+    arm64 = "07b52aee923cc432c38fe4fb6809a08fc6471994efed650af3635350588a20be"
   }
 
   validation {
